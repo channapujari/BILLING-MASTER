@@ -12,6 +12,9 @@ import CustomerForm from "./components/customers/CustomerForm";
 import CustomersShow from "./components/customers/CustomersShow";
 import CustomerEdit from "./components/customers/CustomerEdit";
 import { toggleStatus } from "./redux/actions/userActions";
+import ProductShow from "./components/products/ProductShow";
+import ProductForm from "./components/products/ProductForm";
+import ProductEdit from "./components/products/ProductEdit";
 
 function App(props) {
   const dispatch = useDispatch();
@@ -43,6 +46,17 @@ function App(props) {
           <PrivateRoute
             path="/customers/edit/:id"
             component={CustomerEdit}
+            exact={true}
+          />
+          <PrivateRoute path="/products" component={ProductShow} exact={true} />
+          <PrivateRoute
+            path="/products/new"
+            component={ProductForm}
+            exact={true}
+          />
+          <PrivateRoute
+            path="/products/edit/:id"
+            component={ProductEdit}
             exact={true}
           />
         </Switch>

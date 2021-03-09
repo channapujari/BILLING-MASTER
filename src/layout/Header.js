@@ -30,6 +30,9 @@ const Header = () => {
               <Button className={classes.btn} component={Link} to="/customers">
                 Customers
               </Button>
+              <Button className={classes.btn} component={Link} to="/products">
+                Products
+              </Button>
               <Button className={classes.btn} component={Link} to="/profile">
                 Profile
               </Button>
