@@ -1,14 +1,25 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import swal from "sweetalert";
 
 import useStyles from "./useStyles";
 
 import { AppBar, Toolbar, Typography, Button } from "@material-ui/core";
 
-const Header = () => {
+import { toggleStatus } from "../redux/actions/userActions";
+
+const Header = (props) => {
   const classes = useStyles();
   const isUserLoggedIn = useSelector((state) => state.userLoggedInstatus);
+  const dispatch = useDispatch()
+
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    dispatch(toggleStatus());
+    swal("Successfully LoggedOut!");
+    props.history.push("/");
+  };
 
   return (
     <div>
@@ -36,7 +47,12 @@ const Header = () => {
               <Button className={classes.btn} component={Link} to="/profile">
                 Profile
               </Button>
-              <Button className={classes.btn} component={Link} to="/">
+              <Button
+                className={classes.btn}
+                component={Link}
+                to="/"
+                onClick={handleLogout}
+              >
                 Logout
               </Button>
             </>

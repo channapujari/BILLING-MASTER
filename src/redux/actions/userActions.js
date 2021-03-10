@@ -41,12 +41,6 @@ export const startRegisterUser = (formData, handleRedirect) => {
   };
 };
 
-export const toggleStatue = () => {
-  return {
-    type: "TOGGLE_STATUS",
-  };
-};
-
 //GET user details.
 
 const getInfo = (user) => {
@@ -73,6 +67,8 @@ export const startGetUserInfo = () => {
       });
   };
 };
+
+
 
 // check if the user logged in.
 
