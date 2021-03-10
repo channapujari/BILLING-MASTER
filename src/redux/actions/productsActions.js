@@ -83,7 +83,7 @@ export const startRemoveProduct = (id) => {
 // Edit product.
 
 const updateProduct = (product) => {
-  return { type: "EDIT_CUSTOMER", payload: product };
+  return { type: "EDIT_PRODUCT", payload: product };
 };
 export const startEditProduct = (product, id, handleRedirect) => {
   return (dispatch) => {

@@ -20,7 +20,7 @@ import useStyles from "./useStyles";
 import loginSchema from "./loginSchema";
 import {
   startLoginUser,
-  toggleStatue,
+  toggleStatus,
 } from "../../../redux/actions/userActions";
 
 const LoginInitialValues = {
@@ -41,7 +41,7 @@ const Login = (props) => {
   };
 
   const handleRedirect = () => {
-    dispatch(toggleStatue());
+    dispatch(toggleStatus());
     props.history.push("/dashboard");
     swal("Good job!", "Loggedin Successfully!", "success");
   };

@@ -8,7 +8,7 @@ const productReducer = (state = initialState, action) => {
     case "GET_PRODUCTS": {
       return [...action.payload];
     }
-    case "REMOVE_PRODUCT": {
+    case "DELETE_PRODUCT": {
       return state.filter((product) => product._id !== action.payload._id);
     }
     case "EDIT_PRODUCT": {
