@@ -25,11 +25,9 @@ const Header = (props) => {
     <div>
       <AppBar position="fixed" color="default">
         <Toolbar>
-          <Link to="/" className={classes.link}>
-            <Typography className={classes.title} variant="h6" noWrap>
+            <Typography className={classes.grow} variant="h6" noWrap>
               {"BILLING MASTER"}
             </Typography>
-          </Link>
           <Button className={classes.btn} component={Link} to="/">
             Home
           </Button>

@@ -8,9 +8,7 @@ const useStyles = makeStyles((theme) =>({
         },
         textDecoration: "none"
     },
-    link:{
-        textDecoration:"none",
-        color:"black",
+    grow:{
         flexGrow:1
     },
     btn:{
