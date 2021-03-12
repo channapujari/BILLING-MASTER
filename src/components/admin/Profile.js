@@ -1,14 +1,12 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
-import AccountBoxOutlinedIcon from "@material-ui/icons/AccountBoxOutlined";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
-import Avatar from "@material-ui/core/Avatar";
 import Typography from "@material-ui/core/Typography";
 import UserAvatar from "../images/user.svg";
 
@@ -16,8 +14,8 @@ import { startGetUserInfo } from "../../redux/actions/userActions";
 
 const useStyles = makeStyles({
   media: {
-    height: 300,
-    
+    height: 380,
+    widows: 200
   },
 });
 
@@ -30,7 +28,7 @@ const Profile = (props) => {
     dispatch(startGetUserInfo());
   }, [dispatch]);
 
-  console.log(userInfo);
+  //console.log(userInfo);
   return (
     <Container maxWidth="xs">
       <Card>

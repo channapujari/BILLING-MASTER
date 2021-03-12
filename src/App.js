@@ -15,6 +15,7 @@ import { toggleStatus } from "./redux/actions/userActions";
 import ProductShow from "./components/products/ProductShow";
 import ProductForm from "./components/products/ProductForm";
 import ProductEdit from "./components/products/ProductEdit";
+import Home from "./layout/Home";
 
 function App(props) {
   const dispatch = useDispatch();
@@ -31,6 +32,7 @@ function App(props) {
         <Switch>
           <Route path="/register" component={Register} exact={true} />
           <Route path="/login" component={Login} exact={true} />
+          <Route path="/" component={Home} exact={true} />
           <PrivateRoute path="/profile" component={Profile} exact={true} />
           <PrivateRoute path="/dashboard" component={Dashboard} exact={true} />
           <PrivateRoute
