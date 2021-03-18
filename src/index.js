@@ -7,9 +7,9 @@ import App from "./App";
 import configureStore from "../src/redux/store/configureStore";
 
 const store = configureStore();
-store.subscribe(() => {
-  console.log(store.getState());
-});
+// store.subscribe(() => {
+//   console.log(store.getState());
+// });
 
 ReactDOM.render(
   <Provider store={store}>
