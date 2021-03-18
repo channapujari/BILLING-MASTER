@@ -4,6 +4,9 @@ import loginReducer from "../reducers/loginReducer";
 import userInfoReducer from "../reducers/userInfoReducer";
 import customerReducer from "../reducers/customerReducer";
 import productsReducer from "../reducers/productsReducer";
+import lineItemsReducer from "../reducers/lineItemsReducer";
+import currentBillReducer from "../reducers/currentBillReducer";
+import allBillsReducer from "../reducers/allBillsReducer";
 
 const configureStore = () => {
   const store = createStore(
@@ -11,7 +14,10 @@ const configureStore = () => {
       userLoggedInstatus: loginReducer,
       userInfo: userInfoReducer,
       customers: customerReducer,
-      products: productsReducer
+      products: productsReducer,
+      lineItems: lineItemsReducer,
+      currentBill: currentBillReducer,
+      allBills: allBillsReducer
     }),
     applyMiddleware(thunk)
   );

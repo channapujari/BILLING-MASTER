@@ -43,7 +43,7 @@ const Login = (props) => {
   const handleRedirect = () => {
     dispatch(toggleStatus());
     props.history.push("/dashboard");
-    swal("Good job!", "Loggedin Successfully!", "success");
+    swal("Loggedin Successfully!");
   };
 
   const handleSubmit = (values, formikProps) => {

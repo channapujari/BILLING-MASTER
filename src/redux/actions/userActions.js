@@ -5,7 +5,7 @@ import swal from "sweetalert";
 export const startLoginUser = (formData, handleRedirect) => {
   return (dispatch) => {
     axios
-      .post("users/login", formData)
+      .post("/users/login", formData)
       .then((response) => {
         const result = response.data;
         if (result?.errors) {

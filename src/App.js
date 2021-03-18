@@ -16,12 +16,20 @@ import ProductShow from "./components/products/ProductShow";
 import ProductForm from "./components/products/ProductForm";
 import ProductEdit from "./components/products/ProductEdit";
 import Home from "./layout/Home";
+import BillGenerator from "./components/billing/BillGenerator";
+import AllBills from "./components/billing/AllBills";
+import { startGetCustomers } from "./redux/actions/customerActions";
+import { startGetProducts } from "./redux/actions/productsActions";
+import { startGetAllBills } from "./redux/actions/billActions";
 
 function App(props) {
   const dispatch = useDispatch();
   useEffect(() => {
     if (localStorage.getItem("token")) {
       dispatch(toggleStatus());
+      dispatch(startGetCustomers());
+      dispatch(startGetProducts());
+      dispatch(startGetAllBills());
     }
   }, [dispatch]);
 
@@ -61,6 +69,8 @@ function App(props) {
             component={ProductEdit}
             exact={true}
           />
+          <PrivateRoute path="/bill" component={BillGenerator} exact={true} />
+          <PrivateRoute path="/allBills" component={AllBills} exact={true} />
         </Switch>
       </div>
     </div>

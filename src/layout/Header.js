@@ -42,6 +42,12 @@ const Header = (props) => {
               <Button className={classes.btn} component={Link} to="/products">
                 Products
               </Button>
+              <Button className={classes.btn} component={Link} to="/bill">
+                Billing
+              </Button>
+              <Button className={classes.btn} component={Link} to="/allBills">
+                All Bills
+              </Button>
               <Button className={classes.btn} component={Link} to="/profile">
                 Profile
               </Button>
