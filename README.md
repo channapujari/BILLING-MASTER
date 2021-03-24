@@ -1,3 +1,28 @@
+# Overview
+
+This is a billing application which can be use in any business to easily track all the important Info.
+
+#Features
+
+- User can Register and Login.
+- Authentication is done by JWT.
+- Implemented private routing, so that authorized pages can not be viewed.
+- User can add, edit and update a customer info.
+- User can perform the CRUD operation on Product info as well.
+- User can generate the bill for added product in cart and also view the invoices.
+- Tracking facility for Bills, Total Sales, Total Customers, Total Products and particular Ordre history is available.
+
+#Dependencies
+
+1. react-router-dom
+2. axios
+3. sweetalert
+4. material-ui
+5. lodash
+6. react
+7. react-redux
+8. react-thunk
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
