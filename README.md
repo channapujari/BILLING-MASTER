@@ -26,6 +26,7 @@ This is a billing application which can be use in any business to easily track a
 6. react
 7. react-redux
 8. react-thunk
+9. Formik and Yup
 
 # Getting Started with Create React App
 
