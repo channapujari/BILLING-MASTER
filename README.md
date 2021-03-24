@@ -28,6 +28,17 @@ This is a billing application which can be use in any business to easily track a
 8. react-thunk
 9. Formik and Yup
 
+# Screen Shots
+
+![home](https://user-images.githubusercontent.com/79309643/112368024-a6a0bb00-8d00-11eb-9de1-42c1e6b9bbe4.jpg)
+![signup](https://user-images.githubusercontent.com/79309643/112368110-bd471200-8d00-11eb-953f-6eab3580353d.jpg)
+![signin](https://user-images.githubusercontent.com/79309643/112368166-c89a3d80-8d00-11eb-8a6d-34779df22665.jpg)
+![dashboard](https://user-images.githubusercontent.com/79309643/112368201-d2bc3c00-8d00-11eb-827d-e9f222acd937.jpg)
+![customer](https://user-images.githubusercontent.com/79309643/112368235-dc45a400-8d00-11eb-9cb9-355d44de480d.jpg)
+![products](https://user-images.githubusercontent.com/79309643/112368286-e9fb2980-8d00-11eb-885d-92903a419e12.jpg)
+![invoice](https://user-images.githubusercontent.com/79309643/112368308-f2536480-8d00-11eb-9669-2105a528ea08.jpg)
+![allbills](https://user-images.githubusercontent.com/79309643/112368336-f97a7280-8d00-11eb-988f-033b11ac30bb.jpg)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
