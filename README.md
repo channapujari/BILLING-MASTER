@@ -2,7 +2,7 @@
 
 This is a billing application which can be use in any business to easily track all the important Info.
 
-#Features
+# Features
 
 - User can Register and Login.
 - Authentication is done by JWT.
@@ -12,7 +12,7 @@ This is a billing application which can be use in any business to easily track a
 - User can generate the bill for added product in cart and also view the invoices.
 - Tracking facility for Bills, Total Sales, Total Customers, Total Products and particular Ordre history is available.
 
-#Dependencies
+# Dependencies
 
 1. react-router-dom
 2. axios
